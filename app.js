@@ -16,8 +16,8 @@ app.get('/', (request, response) => {
   response.sendFile(__dirname + '/views/home-page.html');
 });
 
-app.get('/pizza', (request, response, next) => {
-  response.send('<h1>🍕</h1>');
+app.get('/project1', (request, response, next) => {
+  response.sendFile(__dirname + '/views/project1.html');
 });
 
 // Starts the server
